@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Quickstart_Sending_Local_Tile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Quickstart_Sending_Local_Tile"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel Margin="24">
+
+                <TextBlock
+                    Text="Primary Tile"
+                    Style="{StaticResource SubheaderTextBlockStyle}"/>
+
+                <Button
+                    x:Name="ButtonNotifyPrimaryTile"
+                    Content="Send notification to primary"
+                    Click="ButtonNotifyPrimaryTile_Click"
+                    Margin="0,12,0,0"/>
+
+
+                <TextBlock
+                    Text="Secondary Tile"
+                    Style="{StaticResource SubheaderTextBlockStyle}"
+                    Margin="0,48,0,0"/>
+
+                <Button
+                    x:Name="ButtonPinSecondaryTile"
+                    Content="Pin secondary"
+                    Click="ButtonPinSecondaryTile_Click"
+                    Margin="0,12,0,0"/>
+
+                <Button
+                    x:Name="ButtonNotifySecondary"
+                    Content="Send notification to secondary"
+                    Click="ButtonNotifySecondary_Click"
+                    Margin="0,12,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
